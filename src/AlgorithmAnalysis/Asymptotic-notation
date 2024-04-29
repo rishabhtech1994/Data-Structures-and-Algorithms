@@ -1,0 +1,58 @@
+ASYMPTOTIC ANALYSIS
+--------------------
+
+Asymptotics is a method of describing the limiting behaviour of a function.
+Asymptotic analysis refers to defining the mathematical boundation of the run time performance based on the input size.
+
+The Analysis can be done with 3 cases
+1. Best Case (Omegha Notation)
+2. Worst Case (Big - 0 Notation)
+3. Average Case( Thetha Notation)
+
+--------------------------------------------------
+
+Omega (Ω) notation specifies the asymptotic lower bound for a function f(n). For a given function g(n), Ω(g(n)) is denoted by:
+
+Ω (g(n)) = {f(n): there exist positive constants c and n0 such that 0 ≤ c*g(n) ≤ f(n) for all n ≥ n0}.
+
+Follow the steps below to calculate Ω for a program:
+
+1. Break the program into smaller segments.
+2. Find the number of operations performed for each segment(in terms of the input size) assuming the given input is such that the program
+   takes the least amount of time.
+3. Add up all the operations and simplify it, let’s say it is f(n).
+4. Remove all the constants and choose the term having the highest order or any other function which is always less than f(n) when n tends
+   to infinity, let say it is g(n) then, Omega (Ω) of f(n) is Ω(g(n)).
+
+
+---------------------------------------------------
+
+Big-Theta(Θ) notation specifies a bound for a function f(n). For a given function g(n), Θ(g(n)) is denoted by:
+
+Θ (g(n)) = {f(n): there exist positive constants c1, c2 and n0 such that 0 ≤ c1*g(n) ≤ f(n) ≤ c2*g(n) for all n ≥ n0}.
+
+1. Break the program into smaller segments.
+2. Find the number of operations performed for each segment(in terms of the input size) assuming the given input is such that the program
+   takes the least amount of time.
+3. Add up all the operations and simplify it, let’s say it is f(n).
+4. Remove all the constants and choose the term having the highest order. Let say it is g(n) then, Omega (Θ) of f(n) is Θ(g(n)).
+
+
+---------------------------------------------------
+
+Big – O Notation:
+
+Big – O (O) notation specifies the asymptotic upper bound for a function f(n). For a given function g(n), O(g(n)) is denoted by:
+
+O (g(n)) = {f(n): there exist positive constants c and n0 such that f(n) ≤ c*g(n) for all n ≥ n0}.
+
+Follow the steps below to calculate O for a program:
+
+1. Break the program into smaller segments.
+2. Find the number of operations performed for each segment (in terms of the input size) assuming the given input is such that the program
+   takes the maximum time i.e the worst-case scenario.
+3. Add up all the operations and simplify it, let’s say it is f(n).
+4. Remove all the constants and choose the term having the highest order because for n tends to infinity the constants and the lower order terms in f(n) will be insignificant,
+   let say the function is g(n) then, big-O notation is O(g(n)) or O(h(n)) where h(n) has higher order of growth than g(n)
+
+----------------------------------------------------
