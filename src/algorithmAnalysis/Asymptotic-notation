@@ -56,3 +56,41 @@ Follow the steps below to calculate O for a program:
    let say the function is g(n) then, big-O notation is O(g(n)) or O(h(n)) where h(n) has higher order of growth than g(n)
 
 ----------------------------------------------------
+
+
+1. Big-O Notation
+We define an algorithm’s worst-case time complexity by using the Big-O notation, which determines the set of functions grows slower than or at the same rate as the expression. Furthermore, it explains the maximum amount of time an algorithm requires to consider all input values.
+
+2. Omega Notation
+It defines the best case of an algorithm’s time complexity, the Omega notation defines whether the set of functions will grow faster or at the same rate as the expression. Furthermore, it explains the minimum amount of time an algorithm requires to consider all input values.
+
+3. Theta Notation
+It defines the average case of an algorithm’s time complexity, the Theta notation defines when the set of functions lies in both O(expression) and Omega(expression), then Theta notation is used. This is how we define a time complexity average case for an algorithm.
+
+
+
+How to calculate the Big O
+-----------------------------
+
+
+
+
+
+
+Find the Complexity for Iteration
+-----------------------------------
+
+Algorithm	        Best Case	Average Case	Worst Case
+Selection Sort	    O(n^2)	    O(n^2)	         O(n^2)
+Bubble Sort	O(n)	O(n^2)	O(n^2)
+Insertion Sort	O(n)	O(n^2)	O(n^2)
+Tree Sort	O(nlogn)	O(nlogn)	O(n^2)
+Radix Sort	O(dn)	O(dn)	O(dn)
+Merge Sort	O(nlogn)	O(nlogn)	O(nlogn)
+Heap Sort	O(nlogn)	O(nlogn)	O(nlogn)
+Quick Sort	O(nlogn)	O(nlogn)	O(n^2)
+Bucket Sort	O(n+k)	O(n+k)	O(n^2)
+Counting Sort	O(n+k)	O(n+k)	O(n+k)
+
+
+
