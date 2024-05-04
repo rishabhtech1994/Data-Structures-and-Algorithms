@@ -15,17 +15,3 @@ public class Pattern6 {
         pattern6.createPattern6(5);
     }
 }
-<<<<<<< HEAD
-
-
-/*
-
-1 2 3 4 5
-1 2 3 4
-1 2 3
-1 2
-1
-
- */
-=======
->>>>>>> origin
