@@ -12,20 +12,20 @@ public class ZerosToEnd {
      */
 
 
-    public static int[] zeroToEnd(int[] arr){
+    public static int[] zeroToEnd(int[] arr) {
         ArrayList<Integer> temp = new ArrayList<>();
         //O(n)
-        for(int i =0 ; i< arr.length ; i++){
-            if(arr[i] != 0){
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] != 0) {
                 temp.add(arr[i]);
             }
         }
         //O(x)
-        for(int i =0; i< temp.size(); i++){
+        for (int i = 0; i < temp.size(); i++) {
             arr[i] = temp.get(i);
         }
         //O(n-x)
-        for(int i = temp.size() ; i< arr.length; i++){
+        for (int i = temp.size(); i < arr.length; i++) {
             arr[i] = 0;
         }
 
@@ -39,12 +39,12 @@ public class ZerosToEnd {
       Worst case -- O(n)
       Space - O(1)
     */
-    public static int[] zeroToEndOptimal(int[] arr){
-        int j =-1;
+    public static int[] zeroToEndOptimal(int[] arr) {
+        int j = -1;
         // get the position of j i.e. the first 0
         //O(x)
-        for(int i = 0; i<arr.length; i++){
-            if(arr[i] ==0){
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == 0) {
                 j = i;
                 break;
             }
@@ -53,8 +53,8 @@ public class ZerosToEnd {
         if (j == -1) return arr;
         //O(n-x)
         // iterate from j+1
-        for(int i = j+1; i<arr.length; i++){
-            if(arr[i] != 0){
+        for (int i = j + 1; i < arr.length; i++) {
+            if (arr[i] != 0) {
                 int tmp = arr[i];
                 arr[i] = arr[j];
                 arr[j] = tmp;
@@ -69,8 +69,8 @@ public class ZerosToEnd {
         int[] arr = {24, 0, 0, 5, 1, 0, 4, 3};
         //int[] moveZeroList = zeroToEnd(arr);
         int[] moveZeroList = zeroToEndOptimal(arr);
-        for (int i : moveZeroList){
-            System.out.print(i+" ");
+        for (int i : moveZeroList) {
+            System.out.print(i + " ");
         }
 
     }

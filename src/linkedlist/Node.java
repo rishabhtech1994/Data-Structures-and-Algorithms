@@ -3,7 +3,6 @@ package linkedlist;
 public class Node {
     int data;
     linkedlist.Node next;
-
     Node(int data, linkedlist.Node next) {
         this.data = data;
         this.next = next;
