@@ -9,7 +9,6 @@ public class LinearSearch {
             if(arr[i] == elementToBeSearched){
                 return i+1;
             }
-            //break;
         }
         return -1;
     }
