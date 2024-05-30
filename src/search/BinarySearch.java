@@ -3,7 +3,7 @@ package search;
 /*
 Time Complexity
 ----------------
-Worst Case/ Avg Case -- O(log (base 2) N)
+Worst Case-- O(log (base 2) N)
  */
 public class BinarySearch {
     public static int binarySearch(int[] arr, int target){
