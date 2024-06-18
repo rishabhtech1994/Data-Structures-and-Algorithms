@@ -1,6 +1,13 @@
 package array;
 
 public class MajorityCount {
+    /*
+    Moor's Voting Algorithm
+    -------------------------
+    Time Complexity -- O(N) +O(N)
+    Space Complexity -- O(1)
+
+     */
 
     static int majorityCountElement(int[] arr){
         int arrLen = arr.length;
