@@ -9,12 +9,7 @@ public class SelectionSort {
         int arrLen = arr.length;
         for(int i =0; i < arrLen -1 ; i++){
             int min = i;
-            for(int j =i+1 ; j < arrLen; j++){
-                //find min logic
-                if(arr[j] < arr[min]){
-                    min = j;
-                }
-            }
+             
             //Swap
             int temp = arr[min];
             arr[min]= arr[i];

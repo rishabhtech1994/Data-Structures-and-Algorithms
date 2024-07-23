@@ -17,7 +17,7 @@ public class InsertionSort {
             }
         }
 
-        System.out.println("After selection sort:");
+        System.out.println("After insertion sort:");
         for (int j : arr) {
             System.out.print(j + " ");
         }
