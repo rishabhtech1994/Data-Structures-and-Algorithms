@@ -12,6 +12,7 @@ class ListNode{
 public class StackUsingLL {
     ListNode top = null;
     int size=0;
+    // TC == O(1)
     public void stackPushLL(int x){
         // Add the List Node
         ListNode temp  = new ListNode(x);
@@ -22,6 +23,7 @@ public class StackUsingLL {
         size = size +1;
     }
 
+    // TC == O(1)
     public int stackPopLL(){
         ListNode temp = top;
         int tempData = temp.data;
@@ -31,11 +33,12 @@ public class StackUsingLL {
         return tempData;
     }
 
-
+    // TC == O(1)
     public int stackSize(){
         return  size;
     }
 
+    // TC == O(1)
     public void printStackLL(){
         ListNode current = top;
         while (current != null) {
